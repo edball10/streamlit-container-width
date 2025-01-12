@@ -5,16 +5,16 @@ _RELEASE = True
 
 if not _RELEASE:
     _component_func = components.declare_component(
-        "st_dimensions",
+        "st_container_width",
         url="http://localhost:3001",
     )
 else:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _component_func = components.declare_component("st_dimensions", path=build_dir)
+    _component_func = components.declare_component("st_container_width", path=build_dir)
 
 
-def st_dimensions(key=None):
+def st_container_width(key=None):
     return _component_func(key=key)
 
 
@@ -24,8 +24,8 @@ if not _RELEASE:
     st.set_page_config(layout="wide")
 
     st.title("Main Dimensions")
-    st.write(st_dimensions(key="main"))
+    st.write(st_container_width(key="main"))
 
     with st.sidebar:
         st.title("Sidebar Dimensions")
-        st.write(st_dimensions(key="sidebar"))
+        st.write(st_container_width(key="sidebar"))

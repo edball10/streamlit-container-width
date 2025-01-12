@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import StreamlitDimensions from "./StreamlitDimensions"
+import StreamlitContainerWidth from "./StreamlitContainerWidth"
 
 ReactDOM.render(
   <React.StrictMode>
-    <StreamlitDimensions />
+    <StreamlitContainerWidth />
   </React.StrictMode>,
   document.getElementById("root")
 )

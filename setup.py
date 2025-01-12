@@ -14,14 +14,14 @@ def readme() -> str:
 
 
 setuptools.setup(
-    name="streamlit-dimensions",
-    version="0.0.1",
-    author="Aivin V. Solatorio",
-    author_email="avsolatorio@gmail.com",
+    name="streamlit-container-width",
+    version="1.0.0",
+    author="Edward Ball",
+    author_email="edward.ball@hotmail.co.uk",
     description="A simple component that returns the dimensions of the container where it is rendered.",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/avsolatorio/streamlit-dimensions",
+    url="https://github.com/edball10/streamlit-container-width",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[],

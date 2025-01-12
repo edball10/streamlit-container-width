@@ -22,6 +22,7 @@ setuptools.setup(
     long_description=readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/edball10/streamlit-container-width",
+    download_url="https://github.com/edball10/streamlit-container-width/archive/refs/tags/v1.0.0.tar.gz",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[],
